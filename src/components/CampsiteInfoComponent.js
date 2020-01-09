@@ -27,7 +27,8 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
                         return (
                             <div key={comment.id}>
                             <div>{comment.text}</div>
-                            {/* <div>{comment.author} - {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</div> */}
+                            {<div>--{comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</div>}
+                            <br/>
                             </div>
                         )
                     })}
